@@ -281,7 +281,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .CodeMirror-gutter-wrapper {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
       user-select: none; }
 
@@ -372,9 +371,6 @@ div.CodeMirror-dragcursors {
 .CodeMirror-crosshair {
   cursor: crosshair; }
 
-.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
-  background: #d7d4f0; }
-
 .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
   background: #d7d4f0; }
 
@@ -403,11 +399,11 @@ span.CodeMirror-selectedtext {
   background: none; }
 
 .CodeMirror {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #212529;
+  border: 1px solid #dee2e6;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  color: #333;
+  color: #fff;
   font-family: inherit;
   font-size: 16px;
   height: auto;
@@ -423,9 +419,9 @@ span.CodeMirror-selectedtext {
   padding-bottom: 32px; }
 
 .CodeMirror-fullscreen {
-  background-color: white;
+  background-color: #212529;
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dee2e6;
   bottom: 0;
   height: auto;
   left: 0;
@@ -438,10 +434,10 @@ span.CodeMirror-selectedtext {
   width: 50% !important; }
 
 .CodeMirror .CodeMirror-placeholder {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror-cursor {
-  border-left-color: #333; }
+  border-left-color: #fff; }
 
 .CodeMirror-lines {
   padding: 0; }
@@ -451,35 +447,28 @@ span.CodeMirror-selectedtext {
 
 .CodeMirror-selected,
 .CodeMirror-focused .CodeMirror-selected,
-.CodeMirror-line::-moz-selection,
-.CodeMirror-line > span::-moz-selection,
-.CodeMirror-line > span > span::-moz-selection {
-  background-color: rgba(0, 0, 0, 0.1); }
-
-.CodeMirror-selected,
-.CodeMirror-focused .CodeMirror-selected,
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
 .CodeMirror-line > span > span::selection {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .CodeMirror .CodeMirror-code .cm-tag {
-  color: #40bf40; }
+  color: #95bf40; }
 
 .CodeMirror .CodeMirror-code .cm-attribute {
-  color: #40bf40; }
+  color: #95bf40; }
 
 .CodeMirror .CodeMirror-code .cm-string {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-link {
   color: #2680d9; }
 
 .CodeMirror .CodeMirror-code .cm-url {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-hr {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-formatting-header,
 .CodeMirror .CodeMirror-code .cm-formatting-em,
@@ -487,7 +476,7 @@ span.CodeMirror-selectedtext {
 .CodeMirror .CodeMirror-code .cm-formatting-strikethrough,
 .CodeMirror .CodeMirror-code .cm-formatting-code,
 .CodeMirror .CodeMirror-code .cm-formatting-code-block {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-header-1,
 .CodeMirror .CodeMirror-code .cm-header-2,
@@ -520,16 +509,16 @@ span.CodeMirror-selectedtext {
   font-weight: 600; }
 
 .CodeMirror .CodeMirror-code .cm-comment {
-  background-color: #f2f2f2;
+  background-color: #16181b;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 13px;
   padding: 6px 0 3px; }
 
 .CodeMirror .CodeMirror-code span.CodeMirror-selectedtext.cm-comment {
-  background-color: #f2f2f2; }
+  background-color: #16181b; }
 
 .CodeMirror .CodeMirror-code .cm-quote {
-  color: #777; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-strikethrough {
   text-decoration: line-through; }
@@ -544,8 +533,8 @@ span.CodeMirror-selectedtext {
 
 .editor-preview-side {
   border: 0;
-  border-left: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-left: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
   bottom: 0;
   position: fixed;
   right: 0;
@@ -555,9 +544,9 @@ span.CodeMirror-selectedtext {
 
 .editor-preview,
 .editor-preview-side {
-  background-color: #fff;
+  background-color: #212529;
   box-sizing: border-box;
-  color: #333;
+  color: #fff;
   display: none;
   font-family: inherit;
   font-size: 16px;
@@ -566,7 +555,7 @@ span.CodeMirror-selectedtext {
   padding: 0 15px 15px; }
   .editor-preview pre,
   .editor-preview-side pre {
-    background-color: #f2f2f2;
+    background-color: #16181b;
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 13px;
     line-height: 1.2;
@@ -586,7 +575,7 @@ span.CodeMirror-selectedtext {
 
 .editor-preview table,
 .editor-preview-side table {
-  background-color: white;
+  background-color: #212529;
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
@@ -594,7 +583,7 @@ span.CodeMirror-selectedtext {
   .editor-preview table caption,
   .editor-preview-side table caption {
     caption-side: bottom;
-    color: #777;
+    color: #6c757d;
     font-size: 85%;
     padding: 5px;
     text-align: left; }
@@ -603,12 +592,12 @@ span.CodeMirror-selectedtext {
   .editor-preview-side table th,
   .editor-preview-side table td {
     border: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dee2e6;
     padding: 5px;
     text-align: left; }
   .editor-preview table th,
   .editor-preview-side table th {
-    background-color: #f2f2f2;
+    background-color: #16181b;
     font-weight: 600; }
 
 .editor-preview audio:not([controls]),
@@ -628,8 +617,8 @@ span.CodeMirror-selectedtext {
   width: 100%; }
 
 .editor-toolbar {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #212529;
+  border: 1px solid #dee2e6;
   border-bottom: 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -637,7 +626,6 @@ span.CodeMirror-selectedtext {
   padding: 0 15px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
   .editor-toolbar::before, .editor-toolbar::after {
@@ -651,7 +639,7 @@ span.CodeMirror-selectedtext {
   .editor-toolbar a {
     border: 1px solid transparent;
     border-radius: 3px;
-    color: #777 !important;
+    color: #6c757d !important;
     cursor: pointer;
     display: inline-block;
     font-size: 85%;
@@ -661,8 +649,8 @@ span.CodeMirror-selectedtext {
     text-decoration: none !important;
     width: 30px; }
     .editor-toolbar a.active, .editor-toolbar a:hover {
-      border-color: #ddd;
-      color: #333 !important; }
+      border-color: #dee2e6;
+      color: #fff !important; }
     .editor-toolbar a::before {
       line-height: 30px; }
     .editor-toolbar a.fa-header-x::after {
@@ -683,17 +671,17 @@ span.CodeMirror-selectedtext {
     .editor-toolbar a.fa-header-smaller::after {
       content: "▼"; }
   .editor-toolbar i.separator {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #dee2e6;
     color: transparent;
     display: inline-block;
     margin: 0 7.5px;
     text-indent: -10px;
     width: 0; }
   .editor-toolbar:hover a {
-    color: #333 !important; }
+    color: #fff !important; }
 
 .editor-toolbar.fullscreen {
-  background-color: white;
+  background-color: #212529;
   border: 0;
   box-sizing: border-box;
   height: 60px;
@@ -721,13 +709,13 @@ span.CodeMirror-selectedtext {
     display: none; } }
 
 .editor-toolbar.disabled-for-preview a:not(.no-disable) {
-  background-color: #fff;
+  background-color: #212529;
   border-color: transparent;
   pointer-events: none;
   text-shadow: inherit; }
 
 .editor-statusbar {
-  color: #777;
+  color: #6c757d;
   font-family: inherit;
   font-size: 85%;
   padding: 7.5px 15px;
