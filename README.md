@@ -1,15 +1,14 @@
-# SimpleMDE Theme Base
+# SimpleMDE Theme Bootstrap Dark
 
-[![Build Status](https://img.shields.io/travis/xcatliu/simplemde-theme-base.svg?style=flat-square)](https://travis-ci.org/xcatliu/simplemde-theme-base) [![npm package](https://img.shields.io/npm/v/simplemde-theme-base.svg?style=flat-square)](https://www.npmjs.org/package/simplemde-theme-base)
+Forked from [SimpleMDE Theme Base](https://github.com/xcatliu/simplemde-theme-bootstrap-dark).
 
-> The base theme for [SimpleMDE](https://simplemde.com/), you can easily [create your custom theme](https://github.com/xcatliu/simplemde-theme-base#create-your-theme) based on this.
+> The Bootstrap dark theme for [SimpleMDE](https://simplemde.com/).
 
-- [Demo](http://simplemde-theme-base.mazimd.com/)
-- [List of themes](https://github.com/xcatliu/simplemde-theme-base/wiki/List-of-themes)
+- [List of themes](https://github.com/xcatliu/simplemde-theme-bootstrap-dark/wiki/List-of-themes)
 
 ## Screenshot
 
-![Screenshot of SimpleMDE Theme Base](docs/screenshot.png)
+![Screenshot of SimpleMDE Theme Bootstrap Dark](docs/screenshot.png)
 
 ## How to use
 
@@ -21,63 +20,16 @@ https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css
 ```
 with
 ```
-https://cdn.rawgit.com/xcatliu/simplemde-theme-base/master/dist/simplemde-theme-base.min.css
+https://cdn.rawgit.com/CoffeePerry/simplemde-theme-bootstrap-dark/master/dist/simplemde-theme-bootstrap-dark.min.css
 ```
 
 That all, there is no step three.
 
-## Create your theme
+## Environment
 
-1. Fork [SimpleMDE Theme Base](https://github.com/xcatliu/simplemde-theme-base)
-2. Clone the forked repo to your workspace
-3. Run `npm install` and `npm start`
-4. Open `docs/index.html` to see the demo
-5. Update `src/_custom.scss` to customize your theme
-6. Replace `base` to your theme name
-7. Add your theme to the [list of themes](https://github.com/xcatliu/simplemde-theme-base/wiki/List-of-themes)
+**NodeJS** v7.10.1
 
-Checkout an example of customized theme: [SimpleMDE Theme Dark](https://github.com/xcatliu/simplemde-theme-dark)
-
-### Colors
-
-The most common way of customizing a theme is to change the colors.
-
-SimpleMDE Theme Base make this super easy by abstract the colors of SimpleMDE:
-
-```scss
-//
-//
-// An example for dark theme
-//
-// Also you can copy variables from _variables.scss to _custom.scss
-// to customize typography, spacing and other variables.
-//
-//
-
-
-// Background color
-$color-background: #444;
-// For code, th
-$color-background-over: rgba(255, 255, 255, 0.05);
-// For selected area
-$color-background-selected: rgba(255, 255, 255, 0.1);
-
-// Border color
-$color-border: #555;
-
-// Text color
-$color-text: #aaa;
-$color-text-muted: #777;
-// The link color
-$color-text-link: hsl(50, 100%, 50%);
-
-// For preview section
-$smde-color-background-preview: #444;
-// Image alt, HTML tag and attribute
-$smde-color-text-tag: hsl(80, 50%, 50%);
-```
-
-Also you can copy variables from `_variables.scss` to `_custom.scss` to customize typography, spacing and other variables.
+**NPM** v4.2.0
 
 ## License
 

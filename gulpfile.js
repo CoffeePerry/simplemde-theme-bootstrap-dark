@@ -11,7 +11,7 @@ const insert = require('gulp-insert');
 const runSequence = require('run-sequence');
 const pkg = require('./package.json');
 
-const prependText = `/* SimpleMDE Theme Base v${pkg.version} ${pkg.homepage} */\n\n`;
+const prependText = `/* SimpleMDE Theme Bootstrap Dark v${pkg.version} ${pkg.homepage} */\n\n`;
 
 const postcssConfig = [autoprefixer({ browsers: [
   'last 3 iOS versions',
@@ -49,8 +49,8 @@ gulp.task('build_copy', () => {
 
 gulp.task('build', [
   'clean:dist',
-  'build:simplemde-theme-base',
-  'build:simplemde-theme-base:min',
+  'build:simplemde-theme-bootstrap-dark',
+  'build:simplemde-theme-bootstrap-dark:min',
 ]);
 
 gulp.task('copy', [
@@ -62,15 +62,15 @@ gulp.task('clean:dist', () => {
   rimraf.sync(`${DIST_DIR}/*`);
 });
 
-gulp.task('build:simplemde-theme-base:min', ['build:simplemde-theme-base'], () => gulp.src(`${DIST_DIR}/simplemde-theme-base.css`)
+gulp.task('build:simplemde-theme-bootstrap-dark:min', ['build:simplemde-theme-bootstrap-dark'], () => gulp.src(`${DIST_DIR}/simplemde-theme-bootstrap-dark.css`)
   .pipe(sourcemaps.init())
   .pipe(cleanCSS())
   .pipe(insert.prepend(prependText))
-  .pipe(rename('simplemde-theme-base.min.css'))
+  .pipe(rename('simplemde-theme-bootstrap-dark.min.css'))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(DIST_DIR)));
 
-gulp.task('build:simplemde-theme-base', () => gulp.src(`${SRC_DIR}/simplemde-theme-base.scss`)
+gulp.task('build:simplemde-theme-bootstrap-dark', () => gulp.src(`${SRC_DIR}/simplemde-theme-bootstrap-dark.scss`)
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss(postcssConfig))

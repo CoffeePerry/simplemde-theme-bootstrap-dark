@@ -1,4 +1,4 @@
-/* SimpleMDE Theme Base v0.2.1 https://github.com/xcatliu/simplemde-theme-base#readme */
+/* SimpleMDE Theme Bootstrap Dark v0.2.1 https://github.com/CoffeePerry/simplemde-theme-bootstrap-dark#readme */
 
 @charset "UTF-8";
 /* THIS FILE IS COPIED FROM CODEMIRROR.CSS, PLEASE DONOT EDIT IT. */
@@ -453,16 +453,16 @@ span.CodeMirror-selectedtext {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .CodeMirror .CodeMirror-code .cm-tag {
-  color: #95bf40; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-attribute {
-  color: #95bf40; }
+  color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-string {
   color: #6c757d; }
 
 .CodeMirror .CodeMirror-code .cm-link {
-  color: #2680d9; }
+  color: #0d6efd; }
 
 .CodeMirror .CodeMirror-code .cm-url {
   color: #6c757d; }
@@ -734,4 +734,4 @@ span.CodeMirror-selectedtext {
 .editor-statusbar .characters::before {
   content: 'characters: '; }
 
-/*# sourceMappingURL=simplemde-theme-base.css.map */
+/*# sourceMappingURL=simplemde-theme-bootstrap-dark.css.map */

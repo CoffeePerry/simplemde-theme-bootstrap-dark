@@ -18,9 +18,12 @@ $color-border: #dee2e6;
 $color-text: #fff;
 $color-text-muted: #6c757d;
 // The link color
-$color-text-link: hsl(50, 100%, 50%);
+$color-text-link: #0d6efd;
+
+$color-primary: #0d6efd;
+$color-danger: #dc3545;
 
 // For preview section
 $smde-color-background-preview: #212529;
 // Image alt, HTML tag and attribute
-$smde-color-text-tag: hsl(80, 50%, 50%);
+$smde-color-text-tag: #6c757d;
