@@ -450,7 +450,7 @@ span.CodeMirror-selectedtext {
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
 .CodeMirror-line > span > span::selection {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(136, 136, 136, 0.5); }
 
 .CodeMirror .CodeMirror-code .cm-tag {
   color: #6c757d; }
